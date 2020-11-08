@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name": "Evocco Extension",
+    "version": "1.0",
+    "description": "Carbon emission",
+    "browser_action": {
+        "default_title": "Evocco",
+        "default_popup": "src/popup/popup.html"
+    }
+}
