@@ -1,41 +1,46 @@
+.mainbody{
+  width: 425px;
+  
+}
 .hey {
+ 
   text-align: center;
-  width: 200px;
+  width: 260px;
 
   justify-content: center;
   align-items: center;
 }
 .bag {
   display: block;
-  height: 200px;
-  width: 200px;
-  margin: 0 auto;
+  height: 120px;
+  width: 100px;
+  margin: 35px auto;
 }
 .log-in-reminder {
   text-align: center;
-  margin: 10px 80px 10px 80px;
+  margin-top: 20px;
   justify-content: center;
-  width: 300px;
+  width: 320px;
   font-size: small;
-
+  font-weight: 500;
   padding-bottom: 100px;
 }
 .footer {
   width: 100%;
+  border-top: 3px solid #22aa97;
 }
 .Greet {
-  color: rgb(45, 189, 136);
-  font-weight: 600;
+  color: #22aa97;
+  font-weight: 540;
+
 }
 .evocco {
-  margin-left: 30%;
+ margin:auto;
 }
 .evocco img {
   height: 30px;
-  width: 200px;
-}
-.evocco:hover {
-  color: red;
+  width: 150px;
+  
 }
 hr {
   color: rgb(45, 189, 136);
@@ -47,4 +52,7 @@ hr {
 .setting-icon {
   width: 30px;
   height: 30px;
+}
+.navbar{
+  border-bottom:3px solid #22aa97;
 }
