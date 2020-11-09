@@ -28,6 +28,8 @@
 .footer {
   width: 100%;
   border-top: 3px solid #22aa97;
+
+
 }
 .Greet {
   color: #22aa97;
@@ -55,4 +57,8 @@ hr {
 }
 .navbar{
   border-bottom:3px solid #22aa97;
+}
+.footer-icons{
+height: 5px;
+width: 5px;
 }
