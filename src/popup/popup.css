@@ -1,0 +1,46 @@
+.hey {
+  text-align: center;
+  width: 200px;
+
+  justify-content: center;
+  align-items: center;
+}
+.bag {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+.log-in-reminder {
+  text-align: center;
+  margin: 10px 80px 10px 80px;
+  justify-content: center;
+  width: 300px;
+  font-size: small;
+
+  padding-bottom: 100px;
+}
+.footer {
+  width: 100%;
+}
+.Greet {
+  color: rgb(45, 189, 136);
+  font-weight: 600;
+}
+.evocco {
+  margin-left: 30%;
+}
+.evocco img {
+  height: 60px;
+  width: 200px;
+}
+.evocco:hover {
+  color: red;
+}
+hr {
+  color: rgb(45, 189, 136);
+  margin-top: 0;
+}
+.setting-button {
+  margin-right: 0;
+}
