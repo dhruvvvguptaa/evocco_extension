@@ -1,25 +1,24 @@
 .mainbody{
-  width: 425px;
+  width: 400px;
   
 }
-.hey {
- 
+.justify-elements {
   text-align: center;
   width: 260px;
-
+/* 
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
-.bag {
+.popup-bag {
   display: block;
   height: 120px;
   width: 100px;
   margin: 35px auto;
 }
-.log-in-reminder {
+.popup-reminder {
   text-align: center;
   margin-top: 20px;
-  justify-content: center;
+  /* justify-content: center; */
   width: 320px;
   font-size: small;
   font-weight: 500;
@@ -31,15 +30,15 @@
 
 
 }
-.Greet {
+.popup-greet {
   color: #22aa97;
   font-weight: 540;
 
 }
-.evocco {
+.heading-name {
  margin-left:30%;
 }
-.evocco img {
+.heading-name img {
   height: 30px;
   width: 150px;
   
