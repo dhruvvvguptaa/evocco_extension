@@ -5,6 +5,13 @@
     "description": "Carbon emission",
     "browser_action": {
         "default_title": "Evocco",
-        "default_popup": "src/popup/popup.html"
+        "default_popup": "src/popup/popup.html",
+        "default_icon":"logo/Square  16.png"
+    },
+    "icons": {
+        "128": "logo/Square 128.png",
+        "48": "logo/Square 48.png",
+        "16": "logo/Square  16.png"
     }
+    
 }
