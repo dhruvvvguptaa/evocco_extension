@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Evocco</title>
         <script src="/jquery-3.5.1.min.js"></script>
         
@@ -11,7 +12,7 @@
     </head>
     <body>
       <div class="mainbody">
-          <div class="popup-body">
+          <div class="popup-body" hidden>
               <div class="heading-bar">
                 <nav class="navbar bg-light">
                     <a class="navbar-brand heading-name" href="#"><img src="/logo/logo_letters_darkcyan.png" alt="evocco"></a>
@@ -28,17 +29,77 @@
                 <p>When you get to the checkout page we'll calculate the climate impact of your purchases and give you the chance to make them climate neutral.</p>
                 
             </div>
-            <div class="footer">
-                <ul class="nav nav-pills nav-fill">
-                    <li class="nav-item">
-                    <a class="nav-link" href="/HelloWorld/popup.html"><img class="footer-icons" src="/icons/Progress.png"></a>
-                    </li>
-                    <li class="nav-item ">
-                    <a class="nav-link " href="#"><img class="footer-icons" src="/icons/home.png" ></a>
-                    </li>
-                
-                </ul>
+        </div>
+        <div class="summary-body">
+            <div class="heading-bar">
+                <nav class="navbar bg-light">
+                    <a class="navbar-brand heading-name" href="#"><img src="/logo/logo_letters_darkcyan.png" alt="evocco"></a>
+                    <button class="btn btn-light setting-button" type="button"><img class="setting-icon"src="/icons/menu settings.png" alt="settings"></button>
+                </nav>
             </div>
+            <hr>
+            <div class="row">
+                <div class="summary-score-smaller">
+                    <img class="popup-bag" src="/icons/BrownBagSmiling.png" alt="bag">
+                </div>
+                <div class="summary-text-larger">
+                    <p class="summary-text">Your basket score</p>
+                    <div class="row score">
+                        <div id="starsBorder">
+                            <img class="star-size" style="margin-left: 10px;" src="/icons/star_full_green (1).png">
+                            <img class="star-size" src="/icons/star_full_green (1).png">
+                            <img class="star-size" src="/icons/star_full_green (1).png">
+                            <img class="star-size" src="/icons/star_full_green (1).png">
+                            <img class="star-size" src="/icons/star_full_green (1).png">
+                            <span class="score-text">5.0</span>
+                        </div>
+                    </div>
+                    <div class="row score">
+                        <div id="starsBorder">
+                            <img class="co2-size" src="/icons/CO2 widget.png">
+                            <span class="score-text">6.6kg</span> 
+                        </div>  
+                        <div id="starsBorder">
+                            <img class="foodunit-size" src="/icons/Food Unit.png">
+                            <span class="score-text">8.06</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="summary-page-separator">
+            <div class="row">
+                <div class="summary-score-smaller">
+                    <img class="summary-tree" src="/icons/TreesToOffset.png" alt="tree">
+                </div>
+                <div class="summary-text-larger">
+                    <p class="summary-text" style="margin-top: 15px;">Make it climate neutral</p>
+                    <div class="row score">
+                        Plant
+                            <div style="margin-left: 5px;" id="starsBorder">
+                            <b class="trees-text"> 0.46 trees </b>
+                            </div>
+                              to offset the climate impact of your food shopping.
+                    </div>
+                    <div class="row score">
+                        <button class="money-button">Plant for just $0.45</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" class="read-more"><u>Read more about our carbon offsetting</u></a>
+            </div>
+
+        </div>
+        <div class="footer">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                <a class="nav-link" href="/HelloWorld/popup.html"><img class="footer-icons" src="/icons/Progress.png"></a>
+                </li>
+                <li class="nav-item ">
+                <a class="nav-link " href="#"><img class="footer-icons" src="/icons/home.png" ></a>
+                </li>
+            
+            </ul>
         </div>
       </div>
 

@@ -61,3 +61,88 @@ hr {
 height: 35px;
 width: 35px;
 }
+
+.summary-score-smaller{
+    vertical-align: top;
+    display: inline-block;
+    width: 33.33%;
+}
+
+.summary-text-larger{
+    width: 66.66%;
+}
+.summary-text{
+    text-align: center;
+    font-size: large;
+    margin-top: 35px;
+    color: #22aa97;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.score{
+    padding-left: 80px;
+    padding-right: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.star-size{
+    height: 20px;
+    width: 20px;
+    vertical-align: text-top;
+}
+.score-text{
+    padding-right: 10px;
+    margin-left: 2px;
+}
+
+#starsBorder {
+    border-radius: 20px;
+    border: 2px solid #73AD21;  
+    height: 30px;
+    width: auto;
+  }
+.co2-size{
+    height: 20px;
+    width: 35px;
+    vertical-align: text-top;
+}
+.foodunit-size{
+    height: 25px;
+    width: 25px;
+    vertical-align: text-top;
+}
+.summary-page-separator{
+    height: 5px;
+    background-color: #22aa97;
+}
+.summary-tree {
+    display: block;
+    height: 150px;
+    width: 100px;
+    margin: 35px auto;
+}
+.trees-text{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.money-button{
+    background-color: #22aa97;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.read-more{
+    margin-bottom: 10px;
+    margin-left: 70px;
+    color: #22aa97;
+}
