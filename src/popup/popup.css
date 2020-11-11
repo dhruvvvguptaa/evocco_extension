@@ -29,6 +29,11 @@
     cursor: pointer;
     width: 160px;
   }
+.login-button:hover{
+    background-color: rgba(34, 170, 151, 0.9);
+    color: white;
+    text-decoration: none;
+}
 .popup-bag {
   display: block;
   height: 120px;
