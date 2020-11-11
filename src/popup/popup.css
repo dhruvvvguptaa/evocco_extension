@@ -1,6 +1,9 @@
 .mainbody {
   width: 400px;
 }
+.hidden{
+    display: none !important;
+}
 .justify-elements {
   text-align: center;
   width: 260px;
