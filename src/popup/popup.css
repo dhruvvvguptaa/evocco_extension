@@ -12,7 +12,9 @@
   display: block;
   height: 120px;
   width: 100px;
-  margin: 35px auto;
+  margin-top: 20px;
+  margin-left: 40%;
+  margin-bottom: 35px;
 }
 .popup-reminder {
   text-align: center;
@@ -25,7 +27,7 @@
 }
 .footer {
   width: 100%;
-  border-top: 3px solid #22aa97;
+  border-top: 2.25px solid #22aa97;
   background-color: rgba(34, 170, 151, 0.2);
 }
 .popup-greet {
@@ -40,7 +42,7 @@
   width: 150px;
 }
 hr {
-  color: rgb(45, 189, 136);
+  color: #22aa97;
   margin-top: 0;
 }
 .setting-button {
@@ -66,46 +68,57 @@ hr {
 
 .summary-text-larger {
   width: 66.66%;
+  
 }
 .summary-text {
   text-align: center;
-  font-size: large;
-  margin-top: 35px;
+  font-size: 15px;
+  margin-top: 25px;
   color: #22aa97;
-  font-weight: bold;
+  font-weight: 650;
   margin-bottom: 0px;
 }
 .score {
   padding-left: 80px;
   padding-right: 60px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 .star-size {
   height: 20px;
   width: 20px;
-  vertical-align: text-top;
+  margin:auto;
 }
 .score-text {
   padding-right: 10px;
   margin-left: 2px;
+  font-weight: 575;
+  font-size: 12px;
 }
 
 #starsBorder {
-  border-radius: 20px;
-  border: 2px solid #73ad21;
-  height: 30px;
+  border-radius: 12px;
+  border: 2px solid #22aa97;
+  height: 35px;
   width: auto;
+}
+#treeBorder {
+  border-radius: 12px;
+  border: 2px solid #22aa97;
+  height: 27px;
+  width: 100px;
 }
 .co2-size {
   height: 20px;
   width: 35px;
-  vertical-align: text-top;
+  margin:auto;
+  margin-left: 3px;
 }
 .foodunit-size {
-  height: 25px;
-  width: 25px;
-  vertical-align: text-top;
+  height: 23px;
+  width: 23px;
+  margin:auto;
+  margin-left: 5px;
 }
 .summary-page-separator {
   height: 5px;
@@ -113,18 +126,22 @@ hr {
 }
 .summary-tree {
   display: block;
-  height: 150px;
-  width: 100px;
-  margin: 35px auto;
+  height: 140px;
+  width: 80px;
+  margin: 25px auto;
+  margin-left: 45%;
+  
 }
 .trees-text {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 5px;
+  font-size: 15px;
 }
 .money-button {
   background-color: #22aa97;
   border: none;
-  border-radius: 20px;
+  border-radius:15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -133,14 +150,17 @@ hr {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 13px;
+  font-weight: 500;
   cursor: pointer;
+  width: 175px;
 }
 .read-more {
-  margin-bottom: 10px;
-  margin-left: 70px;
+ 
+  margin: auto;
+  margin-bottom: 15px;
   color: #22aa97;
+  font-size: 10px;
 }
 .selected {
   background-color: white;

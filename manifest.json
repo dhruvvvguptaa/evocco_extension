@@ -12,6 +12,18 @@
         "128": "logo/Square 128.png",
         "48": "logo/Square 48.png",
         "16": "logo/Square  16.png"
-    }
+    },
+    "content_scripts":[
+        {
+            "matches":["https://www.tesco.ie/*",
+            "https://www.tesco.com/*"],
+            "js":["content.js"]
+        }
+    ],
+    "permissions":[ "https://www.tesco.com/*",
+        "https://www.tesco.ie/*",
+        "tabs"
+    ]
     
 }
+    
