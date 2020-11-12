@@ -5,19 +5,20 @@
     "description": "Carbon emission",
     "background": {
         "scripts": [
-            "src/background/background.js"
+            "src/background/background.js",
+            "src/background/IconSwitcher.js"
         ],
         "persistent": false
     },
     "browser_action": {
         "default_title": "Evocco",
         "default_popup": "src/popup/popup.html",
-        "default_icon":"logo/Square  16.png"
+        "default_icon":"logo/Square 16 bw.png"
     },
     "icons": {
         "128": "logo/Square 128.png",
         "48": "logo/Square 48.png",
-        "16": "logo/Square  16.png"
+        "16": "logo/Square 16.png"
     },
     "content_scripts":[
         {
@@ -27,8 +28,7 @@
         }
     ],
     "permissions":[ "https://www.tesco.com/*",
-        "https://www.tesco.ie/*",
-        "tabs"
+        "https://www.tesco.ie/*"
     ]
     
 }
