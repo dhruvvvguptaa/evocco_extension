@@ -27,7 +27,7 @@
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    width: 160px;
+    width: auto;
   }
 .login-button:hover{
     background-color: rgba(34, 170, 151, 0.9);
@@ -190,4 +190,11 @@ hr {
 }
 .selected {
   background-color: white;
+}
+.bolder-text{
+  font-weight: 500;
+}
+.justify-registration-elements {
+  text-align: center;
+  width: 350px;
 }
