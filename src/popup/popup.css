@@ -47,7 +47,7 @@
   margin-top: 20px;
   /* justify-content: center; */
   width: 320px;
-  font-size: small;
+  font-size: 15px;
   font-weight: 500;
   padding-bottom: 100px;
 }
@@ -58,7 +58,7 @@
 }
 .popup-greet {
   color: #22aa97;
-  font-weight: 540;
+  font-weight: 650;
 }
 .heading-name {
   margin-left: 30%;
@@ -193,6 +193,8 @@ hr {
 }
 .bolder-text{
   font-weight: 500;
+  margin-top:10px;
+  font-size: 17px;
 }
 .justify-registration-elements {
   text-align: center;
