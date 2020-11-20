@@ -24,7 +24,11 @@
         {
             "matches":["https://www.tesco.ie/*",
             "https://www.tesco.com/*"],
-            "js":["content.js"]
+            "js":["src/inject/generalContent.js"]
+        },
+        {
+            "matches":["https://www.tesco.ie/*"],
+            "js":["src/inject/groceriesContent.js"]
         }
     ],
     "permissions":[ "https://www.tesco.com/*",
