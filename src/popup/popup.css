@@ -1,8 +1,8 @@
 .mainbody {
   width: 400px;
 }
-.hidden{
-    display: none !important;
+.hidden {
+  display: none !important;
 }
 .justify-elements {
   text-align: center;
@@ -12,27 +12,27 @@
   align-items: center; */
 }
 .login-button {
-    background-color: #22aa97;
-    border: none;
-    border-radius:15px;
-    color: white;
-    margin-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    width: auto;
-  }
-.login-button:hover{
-    background-color: rgba(34, 170, 151, 0.9);
-    color: white;
-    text-decoration: none;
+  background-color: #22aa97;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: auto;
+}
+.login-button:hover {
+  background-color: rgba(34, 170, 151, 0.9);
+  color: white;
+  text-decoration: none;
 }
 .popup-bag {
   display: block;
@@ -94,7 +94,6 @@ hr {
 
 .summary-text-larger {
   width: 66.66%;
-  
 }
 .summary-text {
   text-align: center;
@@ -113,7 +112,7 @@ hr {
 .star-size {
   height: 20px;
   width: 20px;
-  margin:auto;
+  margin: auto;
 }
 .score-text {
   padding-right: 10px;
@@ -137,13 +136,13 @@ hr {
 .co2-size {
   height: 20px;
   width: 35px;
-  margin:auto;
+  margin: auto;
   margin-left: 3px;
 }
 .foodunit-size {
   height: 23px;
   width: 23px;
-  margin:auto;
+  margin: auto;
   margin-left: 5px;
 }
 .summary-page-separator {
@@ -156,7 +155,6 @@ hr {
   width: 80px;
   margin: 25px auto;
   margin-left: 45%;
-  
 }
 .trees-text {
   margin-left: 12px;
@@ -167,7 +165,7 @@ hr {
 .money-button {
   background-color: #22aa97;
   border: none;
-  border-radius:15px;
+  border-radius: 15px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
@@ -182,7 +180,6 @@ hr {
   width: 160px;
 }
 .read-more {
- 
   margin: auto;
   margin-bottom: 15px;
   color: #22aa97;
@@ -191,12 +188,19 @@ hr {
 .selected {
   background-color: white;
 }
-.bolder-text{
+.bolder-text {
   font-weight: 500;
-  margin-top:10px;
+  margin-top: 10px;
   font-size: 17px;
 }
 .justify-registration-elements {
   text-align: center;
   width: 350px;
+}
+.money-button:hover {
+  text-decoration: none;
+  color: rgb(204, 219, 216);
+}
+.read-more:hover {
+  color: rgba(34, 170, 151, 0.5);
 }

@@ -33,6 +33,7 @@
     ],
     "permissions":[ "https://www.tesco.com/*",
         "https://www.tesco.ie/*"
+    
     ]
     
 }

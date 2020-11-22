@@ -9,6 +9,8 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             chrome.browserAction.setIcon({
                 path: "logo/Square 16.png",
                 tabId: sender.tab.id});
+                chrome.browserAction.setBadgeText({"text" :"!" });
+                chrome.browserAction.setBadgeBackgroundColor({"color":"red"})
         }
     }
 });
