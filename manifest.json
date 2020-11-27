@@ -29,7 +29,13 @@
         {
             "matches":["https://www.tesco.ie/*"],
             "js":["src/inject/groceriesContent.js"]
+        },
+        {    "matches":["https://www.tesco.ie/",
+            "https://www.tesco.com/"],
+            "js":["src/inject/modalpopup.js"]
+
         }
+
     ],
     "permissions":[ "https://www.tesco.com/*",
         "https://www.tesco.ie/*"
