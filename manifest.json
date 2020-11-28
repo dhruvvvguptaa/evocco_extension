@@ -27,7 +27,7 @@
             "js":["src/inject/generalContent.js"]
         },
         {
-            "matches":["https://www.tesco.ie/*"],
+            "matches":["https://www.tesco.com/groceries/en-GB/checkout/review-trolley"],
             "js":["src/inject/groceriesContent.js"]
         },
         {    "matches":["https://www.tesco.ie/",
@@ -40,7 +40,8 @@
     "permissions":[ "https://www.tesco.com/*",
         "https://www.tesco.ie/*"
     
-    ]
+    ],
+    "content_security_policy": "script-src 'self' ; object-src 'self'"
     
 }
     
