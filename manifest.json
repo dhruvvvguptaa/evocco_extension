@@ -39,8 +39,8 @@
 
     ],
     "permissions":[ "https://www.tesco.com/*",
-        "https://www.tesco.ie/*"
-    
+        "https://www.tesco.ie/*",
+        "webNavigation"    
     ],
     "content_security_policy": "script-src 'self' ; object-src 'self'"
     

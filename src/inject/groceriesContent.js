@@ -1,33 +1,45 @@
-var continueToPayment = document.querySelectorAll(".button-with-feedback");
+console.log("checking");
 
-for (var i = 0; i< continueToPayment.length; i++){
-    continueToPayment[i].firstChild.onclick = function() {
-        var itemName = document.getElementsByClassName("hgdSSe");
-        const itemsArray = [];
+ 
+    document.addEventListener("click", function(e){
+        if((e.target && e.target.innerText === "Continue checkout") || (e.target && e.target.innerText === "Checkout")){
+          
+            getItemNameArray();
+            getItemNumberArray();
+            console.log(getItemNameArray());
+            console.log(getItemNumberArray());
+            alert("checking");
+        }
+    });
 
-        for (var i = 0; i< itemName.length; i++){
-            itemsArray.push(itemName[i].innerText);
+    
+        function getItemNameArray(){
+            var itemName = document.getElementsByClassName("hgdSSe");
+            const itemsArray = [];
+
+            for (var i = 0; i< itemName.length; i++){
+                itemsArray.push(itemName[i].innerText);
+            }
+
+            return itemsArray;
         }
 
-        console.log(itemsArray);
 
 
+        function getItemNumberArray(){
+            var itemCount = document.getElementsByClassName("dGtWSg");
+            const itemCountArrayString = [];    
 
-        var itemCount = document.getElementsByClassName("dGtWSg");
-        const itemCountArrayString = [];    
+            for (var i = 0; i<itemCount.length; i++){
+                var numberFromString = itemCount[i].innerText.charAt(0);
+                itemCountArrayString.push(numberFromString);
+            }
 
-        for (var i = 0; i<itemCount.length; i++){
-            var numberFromString = itemCount[i].innerText.charAt(0);
-            itemCountArrayString.push(numberFromString);
+            const itemCountArray = itemCountArrayString.map(Number);
+            return itemCountArray;
         }
-
-        const itemCountArray = itemCountArrayString.map(Number);
-        console.log(itemCountArray);
-
-        alert("checking");
-    }
-}
-
+        
+    
 
 
 
