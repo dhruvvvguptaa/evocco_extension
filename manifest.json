@@ -5,8 +5,10 @@
     "description": "Carbon emission",
     "background": {
         "scripts": [
+            "jquery-3.5.1.min.js",
             "src/background/background.js",
-            "src/background/IconSwitcher.js"
+            "src/background/IconSwitcher.js",
+            "src/background/scoreCalculation.js"
         ],
         "persistent": false
     },
@@ -30,6 +32,10 @@
             "matches":["https://www.tesco.com/groceries/en-GB/checkout/review-trolley",
                 "https://www.tesco.com/groceries/en-GB/trolley"],
             "js":["src/inject/groceriesContent.js"]
+        },
+        {
+            "matches":["https://www.tesco.ie/groceries/checkout/promotions/default.aspx"],
+            "js":["src/inject/groceriesContentOfIE.js"]
         },
         {    "matches":["https://www.tesco.ie/",
             "https://www.tesco.com/"],
