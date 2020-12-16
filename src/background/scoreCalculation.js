@@ -7,24 +7,23 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
         var arrayForAPI = request.value; 
         console.log(arrayForAPI);
-        // callApi(arrayForAPI);
+        callApi(arrayForAPI);
     }
   });
 
-//   callApi = (arrayForAPI) => {
-//     $.ajax({
-//         url: "https://reqres.in/api/users?page=2",
-//         type: "GET",
-//         // data: {
-//         //     name: "paul rudd",
-//         //     movies: ["I Love You Man", "Role Models"]
-//         // },
-//         complete: function(data){
-//             console.log(data);
-//         },
-//         success: function(response){
-//             console.log(response);
-//         }
-//     });
-//   }
+  callApi = (arrayForAPI) => {
+    $.ajax({
+        url: "https://api.evocco.com/basket-score-ui-demo",
+        type: "POST",
+        data: {
+            products: "Tomatoes, potato"
+        },
+        complete: function(data){
+            console.log(data);
+        },
+        success: function(response){
+            console.log(response);
+        }
+    });
+  }
 
