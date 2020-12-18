@@ -18,11 +18,18 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         data: {
             products: "Tomatoes, potato"
         },
+
         complete: function(data){
             console.log(data);
         },
         success: function(response){
-            console.log(response);
+        
+            $(response)
+            .find('.table')
+             .each(function(i,el){
+              console.log(el);
+         });
+            
         }
     });
   }
