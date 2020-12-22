@@ -11,25 +11,25 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     }
   });
 
+    var data = {
+        api_key: "W_s5jlxqHcz4qAkK1ld3RkgqhPU",
+        products: ["Tomatoes", "potato"]
+    }
+
+
   callApi = (arrayForAPI) => {
     $.ajax({
-        url: "https://api.evocco.com/basket-score-ui-demo",
+        url: "https://beta-api.evocco.com/basket-score",
         type: "POST",
-        data: {
-            products: "Tomatoes, potato"
-        },
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        data: JSON.stringify(data),
 
         complete: function(data){
             console.log(data);
         },
         success: function(response){
-        
-            $(response)
-            .find('.table')
-             .each(function(i,el){
-              console.log(el);
-         });
-            
+            console.log(response);            
         }
     });
   }

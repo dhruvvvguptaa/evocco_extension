@@ -47,7 +47,7 @@
     "permissions":[ "https://www.tesco.com/*",
         "https://www.tesco.ie/*",
         "webNavigation",
-        "https://api.evocco.com/basket-score-ui-demo"    
+        "https://beta-api.evocco.com/basket-score"    
     ],
     "content_security_policy": "script-src 'self' ; object-src 'self'"
     
