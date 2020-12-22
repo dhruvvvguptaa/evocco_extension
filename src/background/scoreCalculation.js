@@ -11,13 +11,18 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     }
   });
 
+    
+
+
+  callApi = (arrayForAPI) => {
+
+    
     var data = {
         api_key: "W_s5jlxqHcz4qAkK1ld3RkgqhPU",
         products: ["Tomatoes", "potato"]
     }
 
 
-  callApi = (arrayForAPI) => {
     $.ajax({
         url: "https://beta-api.evocco.com/basket-score",
         type: "POST",
