@@ -8,7 +8,7 @@ chrome.storage.local.get(['co2InKg', 'foodUnit', 'star'], function(result) {
     console.log('Value of 3 currently is ' + result.star);
     $("#co2InKg").text(result.co2InKg);
     $("#foodUnit").text(result.foodUnit);
-    $("#stars").text(result.star);
+    $("#stars").text(result.star.toFixed(1));
 
 //number of stars    
     var stars=result.star;
@@ -43,7 +43,10 @@ chrome.storage.local.get(['co2InKg', 'foodUnit', 'star'], function(result) {
 //number of trees per kg
     var co2InKg=result.co2InKg;
     var trees=(0.3*co2InKg).toFixed(1);
-    $("#treesperkg").text(trees);
+    if(trees>1)
+    $("#treesperkg").text(trees+" trees");
+    else
+    $("#treesperkg").text(trees+" tree");
 
 //cost of offsetting
     var cost=(0.075*co2InKg).toFixed(2);
