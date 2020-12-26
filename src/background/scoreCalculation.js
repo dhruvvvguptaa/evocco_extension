@@ -19,7 +19,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
     var data = {
         api_key: "W_s5jlxqHcz4qAkK1ld3RkgqhPU",
-        products: arrayForAPI
+        products: ["Tomatoes","Potato","Tomatoes","Banana"]
     }
 
 
@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         },
         success: function(response){
             console.log(response);    
-            ApiResponseManipulation(response)
+            ApiResponseManipulation(response);
         },
         error: function(err){
             console.log(err);
@@ -64,6 +64,24 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         var co2InKg = (response.overall_co2_impact / 1000).toFixed(2);
         var foodUnit = response.overall_food_unit;
         var score = response.overall_score;
+        var star=0;
+        if(score<=433){
+            star=5;
+        }
+        else if(score<=698.5){
+            star=4;
+        }
+        else if(score<=1203){
+            star=3;
+        }
+        else if(score<=1591.5){
+            star=2;
+        }
+        else star=1;
+
+        chrome.storage.local.set({key1: co2InKg, key2: foodUnit,key3:star}, function() {
+            console.log('Value is set '+temp );
+          });
     }
 
 
