@@ -1,4 +1,4 @@
-var temp = 0;
+
 
 //get array of fooditems from content script
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -19,7 +19,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
     var data = {
         api_key: "W_s5jlxqHcz4qAkK1ld3RkgqhPU",
-        products: ["Tomatoes","Potato","Tomatoes","Banana"]
+        products: arrayForAPI
     }
 
 
@@ -49,14 +49,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     
     if(response.num_identified_items === 0){
 
-        console.log("aagya yahan");
-
-        // chrome.runtime.sendMessage({
-        //     action: "empty_response", 
-        //     value: 0
-        // });
-        chrome.storage.local.set({key1: Math.random()*100, key2: Math.random()*100}, function() {
-            console.log('Value is set '+temp );
+        
+        chrome.storage.local.set({co2InKg: 0.00, foodUnit: 0.00, star: 0}, function() {
+            console.log('Value is set ' );
           });
 
     }else{
@@ -79,8 +74,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         }
         else star=1;
 
-        chrome.storage.local.set({key1: co2InKg, key2: foodUnit,key3:star}, function() {
-            console.log('Value is set '+temp );
+        chrome.storage.local.set({co2InKg: co2InKg, foodUnit: foodUnit, star: star}, function() {
+            console.log('Value is set ' );
           });
     }
 
