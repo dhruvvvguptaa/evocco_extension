@@ -41,7 +41,7 @@
                 
             </div>
         </div>
-        <div class="summary-body hidden">
+        <div class="summary-body">
             <div class="row">
                 <div class="summary-score-smaller">
                     <img class="popup-bag" src="/icons/BrownBagSmiling.png" alt="bag">
@@ -61,11 +61,11 @@
                     <div class="row score">
                         <div id="starsBorder">
                             <img class="co2-size" src="/icons/CO2 widget.png">
-                            <span class="score-text">6.6 kg</span> 
+                            <span class="score-text"><span id="co2InKg">6.6</span> kg</span> 
                         </div>  
                         <div id="starsBorder" style="margin-left: 2px;">
                             <img class="foodunit-size"  src="/icons/Food Unit.png">
-                            <span class="score-text">8.06</span> 
+                            <span class="score-text" id="foodUnit">8.06</span> 
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                 <a href="#" class="read-more"><u>Read more about our carbon offsetting</u></a>
             </div>
         </div>
-        <div class="payment-registration-body">
+        <div class="payment-registration-body hidden">
             
             <div class="container justify-registration-elements">
                 <p class="popup-greet">Make it climate neutral</p>
@@ -121,5 +121,7 @@
       </div>
 
     
-       </body>
+      <script src="/jquery-3.5.1.min.js"></script>
+      <script src="popup.js"></script>
+      </body>
 </html>
