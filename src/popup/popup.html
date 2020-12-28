@@ -19,7 +19,7 @@
             </nav>
         </div>
         <hr>
-        <div class="login-body hidden" >
+        <div class="login-body hidden"  >
             <div class="container justify-elements">
                 <img class="popup-bag" src="/icons/BrownBagSmiling.png" alt="bag">
             <span class="popup-greet">Getting started with Evocco!</span>
@@ -106,14 +106,62 @@
                 <a href="#" class="read-more"><u>Read more about our carbon offsetting</u></a>
             </div>
         </div>
-
+        
+        <div class="progress-body hidden">
+            <div class="row">
+                <div class="progress-score-smaller">
+                    <img class="popup-bag" src="/icons/BrownBagSmiling.png" alt="bag">
+                </div>
+                <div class="progress-text-larger">
+                    <p class="progress-text">Your Average basket score</p>
+                    <div class="row score">
+                        <div id="starsBorder">
+                            <span><img class="star-size" id="1star" style="margin-left: 10px;" src="/icons/star_full_green (1).png"></span>
+                            <span><img class="star-size" id="2star" src="/icons/star_full_green (1).png"></span>
+                            <span><img class="star-size" id="3star" src="/icons/star_full_green (1).png"></span>
+                            <span><img class="star-size" id="4star" src="/icons/star_full_green (1).png"></span>
+                            <span><img class="star-size" id="5star" src="/icons/star_full_green (1).png"></span>
+                            <span class="score-text" id="stars">5.0</span>
+                        </div>
+                    </div>
+                    <div class="row score">
+                        <div id="starsBorder">
+                            <img class="co2-size" src="/icons/CO2 widget.png">
+                            <span class="score-text"><span id="co2InKg">6.6</span> kg</span> 
+                        </div>  
+                        <div id="starsBorder" style="margin-left: 2px;">
+                            <img class="foodunit-size"  src="/icons/Food Unit.png">
+                            <span class="score-text" id="foodUnit">8.06</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="progress-page-separator">
+            <div class="row">
+                <div class="progress-score-smaller">
+                    <img class="progress-tree" src="/icons/TreesToOffset.png" alt="tree">
+                </div>
+                <div class="progress-text-larger">
+                    <p class="progress-text" style="margin-top: 10px;">Your Personal Forest</p>
+                    <p class="row score" style="font-size: 15px ;font-weight: 500;">
+                        You have planted a total of 
+                            <span id="progresstreeBorder" style="position:relative; margin-left: 25px;"><b class="progresstrees-text"><span id="treesperkg">0.46 tree</span></b></span>
+                              in native Irish woodland to make your shopping climate neutral.
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" class="read-more"><u>Read more about our carbon offsetting</u></a>
+            </div>
+        </div>
         <div class="footer">
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item">
-                <a class="nav-link" href="/HelloWorld/popup.html"><img class="footer-icons" src="/icons/Progress.png"></a>
+                <a class="nav-link" id="progress-icon" href="#"><img class="footer-icons" src="/icons/Progress.png"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#"><img class="footer-icons" src="/icons/home.png" ></a>
+                <a class="nav-link" id="home-icon" href="#"><img class="footer-icons" src="/icons/home.png" ></a>
                 </li>
             
             </ul>

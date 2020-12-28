@@ -60,3 +60,42 @@ chrome.storage.local.get(['co2InKg', 'foodUnit', 'star'], function(result) {
 //         $("#co2InKg").text("69.69");
 //     }
 //   });
+
+
+
+$(document).ready(function () {
+  $(".money-button").on("click", function () {      
+    $(".summary-body").addClass("hidden");
+    $(".payment-registration-body").removeClass("hidden");
+    //buttons color change
+    $("#home-icon").removeClass("homenoticon");
+    $("#progress-icon").removeClass("progressnoticon")
+  
+  });
+});
+
+$(document).ready(function () {
+  $("#home-icon").on("click", function () {      
+    $(".summary-body").removeClass("hidden");
+    $(".popup-body").addClass("hidden");
+    $(".progress-body").addClass("hidden");
+    $(".payment-registration-body").addClass("hidden");
+    //buttons color change
+    $("#home-icon").addClass("homenoticon");
+    $("#progress-icon").removeClass("progressnoticon")
+    
+    
+  });
+});
+
+$(document).ready(function () {
+  $("#progress-icon").on("click", function () {      
+    $(".summary-body").addClass("hidden");
+    $(".progress-body").removeClass("hidden");
+    $(".popup-body").addClass("hidden");
+    $(".payment-registration-body").addClass("hidden");
+    //buttons color change
+    $("#progress-icon").addClass("progressnoticon");
+    $("#home-icon").removeClass("homenoticon");
+  });
+});

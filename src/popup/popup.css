@@ -203,3 +203,48 @@ hr {
 .read-more:hover {
   color: rgba(34, 170, 151, 0.5);
 }
+.progress-page-separator {
+  height: 5px;
+  background-color: #22aa97;
+}
+.progress-tree {
+  display: block;
+  height: 140px;
+  width: 80px;
+  margin: 25px auto;
+  margin-left: 45%;
+}
+.progress-score-smaller {
+  vertical-align: top;
+  display: inline-block;
+  width: 33.33%;
+}
+
+.progress-text-larger {
+  width: 66.66%;
+}
+.progress-text {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+  color: #22aa97;
+  font-weight: 650;
+  margin-bottom: 0px;
+}
+.progresstrees-text {
+  margin-left: 18px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+#progresstreeBorder {
+  border-radius: 12px;
+  border: 2px solid #22aa97;
+  height: 27px;
+  width: 100px;
+}
+.homenoticon{
+  background-color: white;
+}
+.progressnoticon{
+  background-color: white;
+}
