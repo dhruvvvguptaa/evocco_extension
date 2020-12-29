@@ -34,17 +34,16 @@
   color: white;
   text-decoration: none;
 }
-#arrow{
+#arrow {
   font-size: 40px;
-  margin-right:0px ;
+  margin-right: 0px;
   color: #22aa97;
   margin-bottom: 0px;
   margin-top: 0px;
- 
 }
 #arrow:hover {
   background-color: white;
-  color:#22aa97;
+  color: #22aa97;
   text-decoration: none;
 }
 .popup-bag {
@@ -76,7 +75,7 @@
 .heading-name {
   margin-left: 20%;
 }
-.heading-name-mod{
+.heading-name-mod {
   margin-left: 8%;
 }
 .heading-name img {
@@ -258,9 +257,12 @@ hr {
   height: 27px;
   width: 100px;
 }
-.homenoticon{
+.homenoticon {
   background-color: white;
 }
-.progressnoticon{
+.progressnoticon {
   background-color: white;
+}
+#arrow:hover {
+  background-color: rgba(0, 0, 0, 0);
 }
