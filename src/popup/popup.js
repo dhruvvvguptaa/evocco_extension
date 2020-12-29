@@ -1,6 +1,5 @@
 // how to just change data in popup for that particular tab and not others
 
-console.log("yeh hai popup");
 
 chrome.storage.local.get(['co2InKg', 'foodUnit', 'star'], function(result) {
     console.log('Value of 1 currently is ' + result.co2InKg);
@@ -10,34 +9,12 @@ chrome.storage.local.get(['co2InKg', 'foodUnit', 'star'], function(result) {
     $("#foodUnit").text(result.foodUnit);
     $("#stars").text(result.star.toFixed(1));
 
+    displayStarsOnPopup(result.star);
 //number of stars    
     var stars=result.star;
     console.log(stars);
 
-    if(stars==4)
-    $("#5star").attr("src", "/icons/star_empty_green (1).png");
     
-    else if(stars==3){
-      $("#5star").attr("src", "/icons/star_empty_green (1).png");
-      $("#4star").attr("src", "/icons/star_empty_green (1).png");}
-
-    else if(stars==2){
-      $("#5star").attr("src", "/icons/star_empty_green (1).png");
-      $("#4star").attr("src", "/icons/star_empty_green (1).png");
-      $("#3star").attr("src", "/icons/star_empty_green (1).png");}
-
-    else if(stars==1){
-      $("#5star").attr("src", "/icons/star_empty_green (1).png");
-      $("#4star").attr("src", "/icons/star_empty_green (1).png");
-      $("#3star").attr("src", "/icons/star_empty_green (1).png");
-      $("#2star").attr("src", "/icons/star_empty_green (1).png");}
-
-    else if(stars == 0){
-      $("#5star").attr("src", "/icons/star_empty_green (1).png");
-      $("#4star").attr("src", "/icons/star_empty_green (1).png");
-      $("#3star").attr("src", "/icons/star_empty_green (1).png");
-      $("#2star").attr("src", "/icons/star_empty_green (1).png");
-      $("#1star").attr("src", "/icons/star_empty_green (1).png");}
       
 
 //number of trees per kg
@@ -52,27 +29,9 @@ chrome.storage.local.get(['co2InKg', 'foodUnit', 'star'], function(result) {
     var cost=(0.075*co2InKg).toFixed(2);
     $("#costoffset").text(cost);
   });
-// chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
- 
-//     if (request.action === "empty_response") {
-//         console.log("request reaching");
-//         console.log(request.value);
-//         $("#co2InKg").text("69.69");
-//     }
-//   });
 
 
 
-$(document).ready(function () {
-  $(".money-button").on("click", function () {      
-    $(".summary-body").addClass("hidden");
-    $(".payment-registration-body").removeClass("hidden");
-    //buttons color change
-    $("#home-icon").removeClass("homenoticon");
-    $("#progress-icon").removeClass("progressnoticon")
-  
-  });
-});
 
 $(document).ready(function () {
   $("#home-icon").on("click", function () {      
@@ -83,12 +42,8 @@ $(document).ready(function () {
     //buttons color change
     $("#home-icon").addClass("homenoticon");
     $("#progress-icon").removeClass("progressnoticon")
-    
-    
   });
-});
 
-$(document).ready(function () {
   $("#progress-icon").on("click", function () {      
     $(".summary-body").addClass("hidden");
     $(".progress-body").removeClass("hidden");
@@ -98,4 +53,81 @@ $(document).ready(function () {
     $("#progress-icon").addClass("progressnoticon");
     $("#home-icon").removeClass("homenoticon");
   });
+
+
+  $(".money-button").on("click", function () {      
+    $(".summary-body").addClass("hidden");
+    $(".payment-registration-body").removeClass("hidden");
+    //buttons color change
+    $("#home-icon").removeClass("homenoticon");
+    $("#progress-icon").removeClass("progressnoticon")
+  
+  });
+
+
+  
+
 });
+
+
+displayStarsOnPopup = (stars) => {
+
+    if(stars==5){
+        setFullStarImage(5);
+        setFullStarImage(4);
+        setFullStarImage(3);
+        setFullStarImage(2);
+        setFullStarImage(1);
+    }
+
+    else if(stars==4){
+        setEmptyStarImage(5);
+        setFullStarImage(4);
+        setFullStarImage(3);
+        setFullStarImage(2);
+        setFullStarImage(1);
+    }
+    
+    
+    else if(stars==3){
+        setEmptyStarImage(5);
+        setEmptyStarImage(4);
+        setFullStarImage(3);
+        setFullStarImage(2);
+        setFullStarImage(1);
+    }
+
+    else if(stars==2){
+        setEmptyStarImage(5);
+        setEmptyStarImage(4);
+        setEmptyStarImage(3);
+        setFullStarImage(2);
+        setFullStarImage(1);
+    }
+
+    else if(stars==1){
+        setEmptyStarImage(5);
+        setEmptyStarImage(4);
+        setEmptyStarImage(3);
+        setEmptyStarImage(2);
+        setFullStarImage(1);
+    }
+
+    else if(stars == 0){
+        setEmptyStarImage(5);
+        setEmptyStarImage(4);
+        setEmptyStarImage(3);
+        setEmptyStarImage(2);
+        setEmptyStarImage(1);
+    }
+
+}
+
+
+setFullStarImage = (number) => {
+    $("#"+number+"star").attr("src","/icons/star_full_green (1).png");
+}
+
+setEmptyStarImage = (number) => {
+    $("#"+number+"star").attr("src","/icons/star_empty_green (1).png");
+}
