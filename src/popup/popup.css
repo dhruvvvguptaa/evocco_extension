@@ -99,6 +99,7 @@ hr {
 .footer-icons {
   height: 35px;
   width: 35px;
+  outline: none;
 }
 
 .summary-score-smaller {
@@ -192,6 +193,7 @@ hr {
   font-weight: 500;
   cursor: pointer;
   width: 160px;
+  outline: none;
 }
 .read-more {
   margin: auto;
@@ -214,6 +216,7 @@ hr {
 .money-button:hover {
   text-decoration: none;
   color: rgb(204, 219, 216);
+  outline: none;
 }
 .read-more:hover {
   color: rgba(34, 170, 151, 0.5);
@@ -259,7 +262,9 @@ hr {
 }
 .homenoticon {
   background-color: white;
+  outline: none;
 }
 .progressnoticon {
   background-color: white;
+  outline: none;
 }
