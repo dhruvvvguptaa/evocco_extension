@@ -34,6 +34,19 @@
   color: white;
   text-decoration: none;
 }
+#arrow{
+  font-size: 40px;
+  margin-right:0px ;
+  color: #22aa97;
+  margin-bottom: 0px;
+  margin-top: 0px;
+ 
+}
+#arrow:hover {
+  background-color: white;
+  color:#22aa97;
+  text-decoration: none;
+}
 .popup-bag {
   display: block;
   height: 120px;
@@ -62,6 +75,9 @@
 }
 .heading-name {
   margin-left: 30%;
+}
+.heading-name-mod{
+  margin-left: 8%;
 }
 .heading-name img {
   height: 30px;

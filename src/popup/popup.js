@@ -42,6 +42,9 @@ $(document).ready(function () {
     //buttons color change
     $("#home-icon").addClass("homenoticon");
     $("#progress-icon").removeClass("progressnoticon")
+    //arrow
+    $("#arrow").addClass("hidden");
+    $(".heading-name").removeClass("heading-name-mod");
   });
 
   $("#progress-icon").on("click", function () {      
@@ -52,6 +55,9 @@ $(document).ready(function () {
     //buttons color change
     $("#progress-icon").addClass("progressnoticon");
     $("#home-icon").removeClass("homenoticon");
+    //arrow
+    $("#arrow").addClass("hidden");
+    $(".heading-name").removeClass("heading-name-mod");
   });
 
 
@@ -60,7 +66,11 @@ $(document).ready(function () {
     $(".payment-registration-body").removeClass("hidden");
     //buttons color change
     $("#home-icon").removeClass("homenoticon");
-    $("#progress-icon").removeClass("progressnoticon")
+    $("#progress-icon").removeClass("progressnoticon");
+    //arrow
+    
+    $("#arrow").removeClass("hidden");
+    $(".heading-name").addClass("heading-name-mod");
   
   });
 
