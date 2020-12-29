@@ -71,6 +71,14 @@ $(document).ready(function () {
     
     $("#arrow").removeClass("hidden");
     $(".heading-name").addClass("heading-name-mod");
+    
+    $("#arrow").on("click", function () {
+        $("#arrow").addClass("hidden");
+        $(".heading-name").removeClass("heading-name-mod");        
+        $(".payment-registration-body").addClass("hidden");
+        $(".summary-body").removeClass("hidden");
+        $("#home-icon").addClass("homenoticon");
+    });
   
   });
 
