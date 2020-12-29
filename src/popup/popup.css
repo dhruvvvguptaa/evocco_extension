@@ -42,7 +42,7 @@
   margin-top: 0px;
 }
 #arrow:hover {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   color: #22aa97;
   text-decoration: none;
 }
@@ -262,7 +262,4 @@ hr {
 }
 .progressnoticon {
   background-color: white;
-}
-#arrow:hover {
-  background-color: rgba(0, 0, 0, 0);
 }
