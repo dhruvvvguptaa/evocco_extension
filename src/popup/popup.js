@@ -61,7 +61,7 @@ $(document).ready(function () {
   });
 
 
-  $(".money-button").on("click", function () {      
+  $("#moneyButton").on("click", function () {      
     $(".summary-body").addClass("hidden");
     $(".payment-registration-body").removeClass("hidden");
     //buttons color change
@@ -81,6 +81,20 @@ $(document).ready(function () {
     });
   
   });
+
+
+  $("#moneyButton").mouseover(function(){
+    if($("#costoffset").text()==="0.00"){
+        console.log($("#costoffset").text()+"----"+ $("#moneyButton").text());
+        $("#moneyButton").prop('disabled', true);
+         
+     }
+     else{
+         
+        $("#moneyButton").removeAttr("disabled");
+     }
+    
+})
 
 
   
