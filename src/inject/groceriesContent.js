@@ -28,9 +28,7 @@ const finalArray = [];
             console.log(itemsArray);
             console.log(itemCountArray);
             console.log(finalArray);
-            // chrome.runtime.sendMessage( "hello", function(response) {
-            //     console.log(response);
-            //   });
+          
             chrome.runtime.sendMessage({
                 action: "groceryArray",
                 value: finalArray
