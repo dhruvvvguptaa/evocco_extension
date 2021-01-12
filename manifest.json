@@ -50,7 +50,10 @@
         "https://beta-api.evocco.com/basket-score",
         "storage"    
     ],
-    "content_security_policy": "script-src 'self' ; object-src 'self'"
+    "content_security_policy": "script-src 'self' ; object-src 'self'" ,
+    "web_accessible_resources":[
+        "logo/letters_white.png"
+    ]
     
 }
     
