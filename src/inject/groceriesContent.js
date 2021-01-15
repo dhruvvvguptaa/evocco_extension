@@ -9,7 +9,7 @@ const finalArray = [];
           
             getFinalArray();
             
-            alert("checking");
+            // alert("checking");
         }
     });
 

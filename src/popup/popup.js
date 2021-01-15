@@ -27,15 +27,7 @@ chrome.storage.local.get(['co2InKg', 'foodUnit', 'star'], function(result) {
         //cost of offsetting
             var cost=(0.075*co2InKg).toFixed(2);
             $("#costoffset").text(cost);
-        
     }
-
-    else{
-    $("#co2InKg").text("0.0");
-    $("#foodUnit").text("0.00");
-    $("#stars").text("0.0");
-    }
-    
 });
     
 
