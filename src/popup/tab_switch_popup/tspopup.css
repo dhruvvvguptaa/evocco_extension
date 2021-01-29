@@ -1,0 +1,270 @@
+.mainbody {
+  width: 400px;
+}
+.hidden {
+  display: none !important;
+}
+.justify-elements {
+  text-align: center;
+  width: 260px;
+  /* 
+  justify-content: center;
+  align-items: center; */
+}
+/* .login-button {
+  background-color: #22aa97;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: auto;
+}
+.login-button:hover {
+  background-color: rgba(34, 170, 151, 0.9);
+  color: white;
+  text-decoration: none;
+}
+#arrow {
+  font-size: 40px;
+  margin-right: 0px;
+  color: #22aa97;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#arrow:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #22aa97;
+  text-decoration: none;
+} */
+.popup-bag {
+  display: block;
+  height: 120px;
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 30%;
+  margin-bottom: 35px;
+}
+.popup-reminder {
+  text-align: center;
+  margin-top: 20px;
+  /* justify-content: center; */
+  width: 320px;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 100px;
+}
+.footer {
+  width: 100%;
+  border-top: 2.25px solid #22aa97;
+  background-color: rgba(34, 170, 151, 0.2);
+}
+.popup-greet {
+  color: #22aa97;
+  font-weight: 650;
+}
+.heading-name {
+  margin-left: 20%;
+}
+.heading-name-mod {
+  margin-left: 8%;
+}
+.heading-name img {
+  height: 30px;
+  width: 150px;
+}
+hr {
+  color: #22aa97;
+  margin-top: 0;
+}
+.setting-button {
+  margin-right: 0;
+}
+.setting-icon {
+  width: 30px;
+  height: 30px;
+}
+.navbar {
+  border-bottom: 3px solid #22aa97;
+}
+.footer-icons {
+  height: 35px;
+  width: 35px;
+  outline: none;
+}
+
+/*.summary-score-smaller {
+  vertical-align: top;
+  display: inline-block;
+  width: 33.33%;
+}
+
+.summary-text-larger {
+  width: 66.66%;
+}
+.summary-text {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+  color: #22aa97;
+  font-weight: 650;
+  margin-bottom: 0px;
+}
+.score {
+  padding-left: 80px;
+  padding-right: 60px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.star-size {
+  height: 20px;
+  width: 20px;
+  margin: auto;
+}
+.score-text {
+  padding-right: 10px;
+  margin-left: 2px;
+  font-weight: 575;
+  font-size: 12px;
+}
+
+.stars-border {
+  border-radius: 12px;
+  border: 2px solid #22aa97;
+  height: 35px;
+  width: auto;
+}
+#treeBorder {
+  border-radius: 12px;
+  border: 2px solid #22aa97;
+  height: 27px;
+  width: 100px;
+}
+.co2-size {
+  height: 20px;
+  width: 35px;
+  margin: auto;
+  margin-left: 3px;
+}
+.foodunit-size {
+  height: 23px;
+  width: 23px;
+  margin: auto;
+  margin-left: 5px;
+}
+.summary-page-separator {
+  height: 5px;
+  background-color: #22aa97;
+}
+.summary-tree {
+  display: block;
+  height: 140px;
+  width: 80px;
+  margin: 25px auto;
+  margin-left: 45%;
+}
+.trees-text {
+  margin-left: 18px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.money-button {
+  background-color: #22aa97;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 160px;
+  outline: none;
+}
+.read-more {
+  margin: auto;
+  margin-bottom: 15px;
+  color: #22aa97;
+  font-size: 10px;
+}
+.selected {
+  background-color: white;
+}*/
+.bolder-text {
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 17px;
+}
+.justify-registration-elements {
+  text-align: center;
+  width: 350px;
+}
+/* .money-button:hover {
+  text-decoration: none;
+  color: rgb(204, 219, 216);
+  outline: none;
+}
+.read-more:hover {
+  color: rgba(34, 170, 151, 0.5);
+}
+.progress-page-separator {
+  height: 5px;
+  background-color: #22aa97;
+}
+.progress-tree {
+  display: block;
+  height: 140px;
+  width: 80px;
+  margin: 25px auto;
+  margin-left: 45%;
+}
+.progress-score-smaller {
+  vertical-align: top;
+  display: inline-block;
+  width: 33.33%;
+}
+
+.progress-text-larger {
+  width: 66.66%;
+}
+.progress-text {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+  color: #22aa97;
+  font-weight: 650;
+  margin-bottom: 0px;
+}
+.progresstrees-text {
+  margin-left: 18px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+#progresstreeBorder {
+  border-radius: 12px;
+  border: 2px solid #22aa97;
+  height: 27px;
+  width: 100px;
+}*/
+.homenoticon {
+  background-color: white;
+  outline: none;
+}
+.progressnoticon {
+  background-color: white;
+  outline: none;
+}
