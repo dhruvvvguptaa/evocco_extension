@@ -44,6 +44,7 @@ for (var i = 0; i < elements.length; i++) {
 
         for (let i = 0; i< itemName.length; i++){
             itemsArray.push(itemName[i].innerText);
+
         }
 
     }
@@ -54,8 +55,16 @@ for (var i = 0; i < elements.length; i++) {
         var itemCount = document.getElementsByClassName("basketItemQuantity");   
 
         for (let i = 0; i<itemCount.length; i++){
-            var numberFromString = parseInt(itemCount[i].defaultValue);
-            itemCountArray.push(numberFromString);
+            if(itemCount[i].defaultValue){
+                var numberFromString = parseInt(itemCount[i].defaultValue);
+                itemCountArray.push(numberFromString);
+                
+            } else {
+                var numberFromString = parseInt(itemCount[i].innerHTML);
+                itemCountArray.push(numberFromString);
+                
+            }
+            
         }
         
 

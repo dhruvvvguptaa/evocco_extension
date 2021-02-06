@@ -35,7 +35,7 @@
             "js":["src/inject/groceriesContent.js"]
         },
         {
-            "matches":["https://www.tesco.ie/groceries/Basket/"],
+            "matches":["https://www.tesco.ie/groceries/*"],
             "js":["src/inject/groceriesContentOfIE.js"]
         },
         {    "matches":["https://www.tesco.ie/",
