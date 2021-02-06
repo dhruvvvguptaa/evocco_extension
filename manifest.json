@@ -40,9 +40,17 @@
         },
         {    "matches":["https://www.tesco.ie/",
             "https://www.tesco.com/"],
-            "js":["src/inject/modalpopup.js"]
+            "js":["src/inject/modalpopuphomepage.js"]
 
+        },
+        {
+            "matches":["https://www.tesco.ie/groceries/Checkout/",
+                "https://www.tesco.com/groceries/en-GB/checkout/order-summary",
+                "https://www.tesco.com/groceries/en-GB/checkout/recommendations"],
+
+            "js":["src/inject/modalpopupcheckout.js"]
         }
+
 
     ],
     "permissions":[ "https://www.tesco.com/*",
@@ -53,7 +61,8 @@
     ],
     "content_security_policy": "script-src 'self' ; object-src 'self'" ,
     "web_accessible_resources":[
-        "logo/letters_white.png"
+        "logo/logo_letters_darkcyan.png",
+        "icons/BrownBagSmiling.png"
     ]
     
 }
