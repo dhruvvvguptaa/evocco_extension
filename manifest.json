@@ -62,7 +62,10 @@
     "content_security_policy": "script-src 'self' ; object-src 'self'" ,
     "web_accessible_resources":[
         "logo/logo_letters_darkcyan.png",
-        "icons/BrownBagSmiling.png"
+        "icons/BrownBagSmiling.png",
+        "icons/star_full_green.png",
+        "icons/CO2_widget.png",
+        "icons/TreesToOffset.png"
     ]
     
 }

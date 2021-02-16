@@ -158,7 +158,7 @@ displayStarsOnPopup = (stars) => {
 
 
 setFullStarImage = (number) => {
-    $("#"+number+"star").attr("src","/icons/star_full_green (1).png");
+    $("#"+number+"star").attr("src","/icons/star_full_green.png");
 }
 
 setEmptyStarImage = (number) => {
