@@ -20,15 +20,63 @@
             </nav>
         </div>
         <hr>
-        <div class="popup-body ">
+        <div class="summary-body ">
             <div class="container justify-elements">
                 <img class="popup-bag" src="/icons/BrownBagSmiling.png" alt="bag">
-            <span class="popup-greet">Hey there, we see you're shopping for groceries online</span>
+            <span class="popup-greet">Hey there, we see you're shopping for groceries online in another tab.</span>
 
             </div>
             <div class="container popup-reminder">
-                <p>When you get to the checkout page we'll calculate the climate impact of your purchases and give you the chance to make them climate neutral.</p>
+                <p>Make sure to use the Evocco extension to check and offset your climate impact when you checkout!</p>
 
+            </div>
+        </div>
+        <div class="progress-body hidden ">
+            <div class="row">
+                <div class="progress-score-smaller">
+                    <img class="popup-bag" src="/icons/BrownBagSmiling.png" alt="bag">
+                </div>
+                <div class="progress-text-larger">
+                    <p class="progress-text">Your Average basket score</p>
+                    <div class="row score">
+                        <div class="stars-border">
+                            <span><img class="star-size" style="margin-left: 10px;" src="/icons/star_empty_green (1).png"></span>
+                            <span><img class="star-size" src="/icons/star_empty_green (1).png"></span>
+                            <span><img class="star-size" src="/icons/star_empty_green (1).png"></span>
+                            <span><img class="star-size" src="/icons/star_empty_green (1).png"></span>
+                            <span><img class="star-size" src="/icons/star_empty_green (1).png"></span>
+                            <span class="score-text">0.0</span>
+                        </div>
+                    </div>
+                    <div class="row score">
+                        <div class="stars-border">
+                            <img class="co2-size" src="/icons/CO2 widget.png">
+                            <span class="score-text"><span>0.0</span> kg</span> 
+                        </div>  
+                        <div class="stars-border" style="margin-left: 2px;">
+                            <img class="foodunit-size"  src="/icons/Food Unit.png">
+                            <span class="score-text">0.00</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="progress-page-separator">
+            <div class="row">
+                <div class="progress-score-smaller">
+                    <img class="progress-tree" src="/icons/TreesToOffset.png" alt="tree">
+                </div>
+                <div class="progress-text-larger">
+                    <p class="progress-text" style="margin-top: 10px;">Your Personal Forest</p>
+                    <p class="row score" style="font-size: 15px ;font-weight: 500;">
+                        You have planted a total of 
+                            <span id="progresstreeBorder" style="position: relative; top: -20px; margin-left: 25px;"><b class="progresstrees-text"><span>0.00 tree</span></b></span>
+                    <p class="row score" style="margin-top:-25px; font-size: 15px ;font-weight: 500;">in native Irish woodland to make your shopping climate neutral.</p>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <a href="https://www.evocco.com/single-post/2020/05/08/Introducing-Offset" target="_blank" class="read-more"><u>Read more about our carbon offsetting</u></a>
             </div>
         </div>
                 
@@ -39,12 +87,13 @@
                 <a class="nav-link" id="progress-icon" href="#"><img class="footer-icons" src="/icons/Progress.png"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link " id="home-icon" href="#"><img class="footer-icons" src="/icons/home.png" ></a>
+                <a class="nav-link homenoticon" id="home-icon" href="#"><img class="footer-icons" src="/icons/home.png" ></a>
                 </li>
             
             </ul>
         </div>
       </div>
-        
+      <script src="/jquery-3.5.1.min.js"></script>
+      <script src="tspopup.js"></script>
       </body>
 </html>

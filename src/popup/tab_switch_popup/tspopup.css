@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center; */
 }
-/* .login-button {
+.login-button {
   background-color: #22aa97;
   border: none;
   border-radius: 15px;
@@ -45,7 +45,7 @@
   background-color: rgba(0, 0, 0, 0);
   color: #22aa97;
   text-decoration: none;
-} */
+}
 .popup-bag {
   display: block;
   height: 120px;
@@ -102,7 +102,7 @@ hr {
   outline: none;
 }
 
-/*.summary-score-smaller {
+.summary-score-smaller {
   vertical-align: top;
   display: inline-block;
   width: 33.33%;
@@ -203,7 +203,7 @@ hr {
 }
 .selected {
   background-color: white;
-}*/
+}
 .bolder-text {
   font-weight: 500;
   margin-top: 10px;
@@ -213,7 +213,7 @@ hr {
   text-align: center;
   width: 350px;
 }
-/* .money-button:hover {
+.money-button:hover {
   text-decoration: none;
   color: rgb(204, 219, 216);
   outline: none;
@@ -259,7 +259,7 @@ hr {
   border: 2px solid #22aa97;
   height: 27px;
   width: 100px;
-}*/
+}
 .homenoticon {
   background-color: white;
   outline: none;
