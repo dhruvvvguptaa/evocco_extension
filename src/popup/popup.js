@@ -27,6 +27,7 @@ chrome.storage.local.get(['co2InKg', 'foodUnit', 'star'], function(result) {
         //cost of offsetting
             var cost=(0.075*co2InKg).toFixed(2);
             $("#costoffset").text(cost);
+
     }
 });
     
@@ -79,7 +80,11 @@ $(document).ready(function () {
         $(".payment-registration-body").addClass("hidden");
         $(".summary-body").removeClass("hidden");
         $("#home-icon").addClass("homenoticon");
+        $("#paypal-button").addClass("hidden");
     });
+    
+    $("#paypal-button").removeClass("hidden");
+
   
   });
 
@@ -96,7 +101,6 @@ $(document).ready(function () {
      }
     
 })
-
 
   
 
