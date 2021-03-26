@@ -56,7 +56,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
     }else{
 
-        var co2InKg = (response.overall_co2_impact / 1000).toFixed(2);
+        var co2InKg = (response.overall_co2_impact ).toFixed(2);
         var foodUnit = response.overall_food_unit;
         var score = response.overall_score;
         var star=0;
