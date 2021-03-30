@@ -3,10 +3,11 @@
   var cost=(0.075*(result.co2InKg)).toFixed(2);
   paypal.Button.render({
     // Configure environment
-    env: 'sandbox',
+    env: 'production',
     client: {
-      sandbox: 'AcTkjH53vCT0clNhnPQMagrdpdrysJxaEfkhIutehR-iyWrwb2Pf7py7a9g8_e3B0j1M5uH_5ab7y6xc',
-      production: 'demo_production_client_id'
+      
+      
+      production: 'AUHgzjmFZ8X67ItTBK39RWHYwKXg7A4NHU9VT2HS9SU-1rjaK5Ut8q0kUPHWKT63jH2cdpBZPew51Xu4'
     },
     // Customize button (optional)
     locale: 'en_IE',
