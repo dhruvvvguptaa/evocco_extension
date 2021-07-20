@@ -18,7 +18,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 
     var data = {
-        api_key: "W_s5jlxqHcz4qAkK1ld3RkgqhPU",
+        api_key: "--hidden--",
         products: arrayForAPI
     }
 
