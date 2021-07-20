@@ -58,21 +58,21 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
         var co2InKg = (response.overall_co2_impact ).toFixed(2);
         var foodUnit = response.overall_food_unit;
-        var score = response.overall_score;
+        var score = response.overall_star_rating;
         var star=0;
-        if(score<=433){
-            star=5;
+        if(score<=1.0){
+            star=1;
         }
-        else if(score<=698.5){
-            star=4;
-        }
-        else if(score<=1203){
-            star=3;
-        }
-        else if(score<=1591.5){
+        else if(score<=2.0){
             star=2;
         }
-        else star=1;
+        else if(score<=3.0){
+            star=3;
+        }
+        else if(score<=4.0){
+            star=4;
+        }
+        else star=5;
 
         chrome.storage.local.set({co2InKg: co2InKg, foodUnit: foodUnit, star: star}, function() {
             console.log('Value is set ' );
