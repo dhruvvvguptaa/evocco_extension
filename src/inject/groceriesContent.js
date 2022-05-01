@@ -37,7 +37,7 @@ const finalArray = [];
 
         //it puts names of item in cart in an array
         function getItemNameArray(){
-            var itemName = document.getElementsByClassName("dTQrMR");
+            var itemName = document.getElementsByClassName("ldbwMG");
             
 
             for (let i = 0; i< itemName.length; i++){
@@ -49,7 +49,7 @@ const finalArray = [];
 
         //it gets the quantity of items in cart in an array
         function getItemNumberArray(){
-            var itemCount = document.getElementsByClassName("SaRXc");   
+            var itemCount = document.getElementsByClassName("hupFMH");   
 
             for (let i = 0; i<itemCount.length; i++){
                 var numberFromString = parseInt(itemCount[i].innerText.charAt(0));
